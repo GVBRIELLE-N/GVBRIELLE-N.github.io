@@ -77,7 +77,7 @@ button:hover{
     width: 20px;
 }
 .closeBox{
-    background-image: url("_images/closeicon.png");
+    background-image: url("./images/closeicon.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 20px;
@@ -92,7 +92,7 @@ button:hover{
     cursor: pointer;
 }
 .closeBox:active{
-    background-image: url("_images/closeiconactive.png");
+    background-image: url("./images/closeiconactive.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -276,5 +276,5 @@ button:hover{
 
 @font-face {
     font-family: mainFont;
-    src: url("fonts/consola.ttf");
+    src: url("./fonts/consola.ttf");
 }
