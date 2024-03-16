@@ -1,7 +1,7 @@
 body{
     background-color: #008080;
     color: #000000;
-    font-family: mainfont;
+    font-family: mainFont;
     font-size: larger;
     margin: 0px;
 }
@@ -275,6 +275,6 @@ button:hover{
 }
 
 @font-face {
-    font-family: mainfont;
+    font-family: mainFont;
     src: url("fonts/consola.ttf");
 }
