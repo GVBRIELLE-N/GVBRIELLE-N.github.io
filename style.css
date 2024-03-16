@@ -1,0 +1,280 @@
+body{
+    background-color: #008080;
+    color: #000000;
+    font-family: mainFont;
+    font-size: larger;
+    margin: 0px;
+}
+a{
+    color: #000000;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-decoration: none;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+a:hover{
+    cursor: pointer;
+}
+a:active{
+    background-color: #5c5c5c;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+}
+a:visited{
+    color: #000000;
+}
+button{
+    padding-left: 4px;
+    padding-right: 4px;
+    text-decoration: none;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+button:hover{
+    cursor: pointer;
+}
+/* p{
+    font-weight: bold;
+} */
+
+/* Classes */
+
+.center{
+    background-color: #C3C3C3;
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #424242;
+    border-right: 2px solid #424242;
+}
+.center h1{
+    color: #ffffff;
+    background-color: #041586;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 0px;
+    padding-left: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.center h1 img{
+    position: relative;
+    top: 3px;
+    width: 20px;
+}
+.closeBox{
+    background-image: url("_images/closeIcon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 22px;
+    position: absolute;
+    text-align: center;
+    top: 3px;
+    right: 2px;
+    filter: saturate(100%);
+}
+.closeBox:hover{
+    cursor: pointer;
+}
+.closeBox:active{
+    background-image: url("_images/closeIconActive.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.noneType{
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+.noneType:active{
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+.postLink{
+    height: 5%;
+    font-size: smaller;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: left;
+}
+.postLink:hover{
+    cursor: pointer;
+}
+.postLink a{
+    color: #000000;
+    width: 90%;
+    border: none;
+}
+.postLink a:active{
+    color: #ffffff;
+    border: dashed 1px #000000;
+    background-color: #191889;
+}
+.projectImages{
+    height: 200px;
+    filter: saturate(0%);
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+    padding: 3px 3px 0px 3px;
+}
+.projectImages:hover{
+    cursor: pointer;
+    filter: saturate(100%);
+}
+.taskbar{
+    position: absolute;
+    font-size: small;
+    width: 100%;
+    height: 30px;
+    background-color: #C3C3C3;
+    border-top: 2px solid #ffffff;
+    bottom: 0px;
+}
+.vihlWindow{
+    background-color: #8f79a3;
+    width: 100%;
+    border-top: 4px solid #271a2e;
+}
+.vihlWindow p{
+    font-weight: bold;
+}
+.vihlWindow h2{
+    text-decoration: double underline;
+}
+
+/* IDs */
+#aboutAvatar{
+    height: 55%;
+    position: absolute;
+    transform: translate(12%, -130%);
+    margin: 0px;
+    padding:0px;
+    z-index: 2;
+    background-color: #acacac;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+}
+#clock{
+    position: absolute;
+    text-align: right;
+    width: 95px;
+    height: 90%;
+    right: 0;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-left: 2px solid #818181;
+    border-top: 2px solid #818181;
+}
+#clock p{
+    position:relative;
+    right: 10%;
+    bottom: 25%;
+}
+#clock img{
+    position:absolute;
+    left: 5%;
+    top: 5px;
+    z-index: 3;
+}
+#clock:hover{
+    cursor: default;
+}
+#Id_text{
+    text-align: left;
+    margin-left: 220px;
+}
+#info{
+    height: 320px;
+    z-index: 1;
+}
+#links{
+    height: 250px;
+}
+#linksAvatar{
+    height: 68%;
+    position: absolute;
+    transform: translate(-20%, -87%);
+    margin: 0px;
+    padding:0px;
+    z-index: 2;
+}
+#pageFormat{
+    background-color: #ffffff;
+    height: 90%;
+    width: 98%;
+    margin-left: 1px;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+#profile-pic{
+    width: 230px;
+    border-radius: 100%;
+    background-color: #808080;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+#startButton{
+    position: absolute;
+    text-align: right;
+    width: 80px;
+    height: 90%;
+    left: 2px;
+    border-bottom: 3px solid #000000;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+}
+#startButton:active{
+    background-color: #818181;
+    border-bottom: 3px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+}
+#startButton:hover{
+    cursor: pointer;
+}
+#startButton img{
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    height: 25px;
+}
+
+#startButton p{
+    position: relative;
+    bottom: 35%;
+    right: 10%;
+    font-size: medium;
+}
+
+@font-face {
+    font-family: mainFont;
+    src: url("_fonts/consola.ttf");
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            GEE_BEE!! | HOME
+        </title>
+
+        <script src="script.js"></script>
+        <link rel="icon" type="image/png" href="_images/Icon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body onload="setTime(), calculateAge()" oncontextmenu="return false;">
+
+
+        <div class="container">
+            <div class="center" id="main" style="display: block;">
+                <center>
+                    <h1><img src='_images/WebIcon.png'>
+                        Home Page
+                    </h1>
+                    <img id="profile-pic" src="_images/GabbyProf.png" draggable="false">
+                    <p style="margin-bottom: 0px;">
+                            Hullooo! I'm <font title="AKA GEE_BEE!!/GVBRIELLE" style="color: #191889; text-decoration: underline;"><b>Gabby!!</b></font>
+                        <br>I make games and stuff!
+                    </p>
+                    <hr width="90%" size="2">
+                    <a onclick="toggleInfoVisibility()">About Me</a> | <a onclick="toggleLinks()">Links</a> | <a onclick="toggleProjects()">My Projects</a>
+                </center>
+            </div>
+            <div class="center" id="info" style="display: none;">
+                <h1><img src='_images/infoIcon.png'>
+                    Staff Card
+                </h1>
+
+                    <p id="Id_text">
+                            <b>Full Name:</b> Gabby Kayleigh <font title="Last Name withheld :p" style="cursor:help;">N</font>
+                        <br><b>Country:</b> South Africa (GMT+2)
+                        <br><b>Gender:</b> Non-Binary  (She/They)
+                        <br><b>Age:</b> <font id="gabby_age">0</font>
+                        <br>
+                        <br><u><b>Skills:</b></u>
+                        <br>2D/3D Art | 3D Animation |
+                        <br>Game Dev | Graphic Design | <font title="Languages: C#, C++, Java, JavaScript, Python">Programming</font>
+                    </p>
+                    <hr width="90%" size="2">
+                    <center>
+                    <a onclick="toggleInfoVisibility()">Return to Main Window</a>
+                    </center>
+                <img draggable="false" id="aboutAvatar" src="_images/GabbyID.png">
+            </div>
+            <div class="center" id="links" style="display: none;">
+                <h1>
+                    Links and Such:
+                </h1>
+                <center>
+                    <p>
+                                Below is a list of links to my accounts and such.
+                            <br>Most of them are pretty empty but I'll try to post often and keep everything up to date.
+                    </p>
+                    <hr width="90%" size="2">
+                    <a href="https://gabbyblank.artstation.com/">ArtStation</a>
+                    <a href="https://bsky.app/profile/geebeedev.bsky.social">BlueSky</a>
+                    <a href="https://gvbrielle.itch.io">Itch.io</a>
+                    <a href="https://youtube.com/@geebeedev?feature=share9">YouTube</a>
+                    <hr width="90%" size="2">
+                <br><a onclick="toggleLinks()">Return to HomePage</a>
+                </center>
+                <img draggable="false" id="linksAvatar" src="_images/Design_A.png">
+            </div>
+            <div class="center" id="projects" style="display: none;">
+                <h1>
+                    My Projects
+                </h1>
+                <center>
+                    <p>
+                                Below is a list of my projects.
+                            <br>Note: Links for each project will be available soon
+                    </p>
+                    <hr width="90%" size="2">
+                    <div style="height: 200px;">
+                        <a class="noneType"><img class="projectImages" src="_images/Fei_cover.png"></a> <a class="noneType"><img class="projectImages" src="_images/ED_cover.png"></a> <a class="noneType"><img class="projectImages" src="_images/Vihl_cover.png"></a>
+                    </div>
+                    <hr width="90%" size="2">
+                <br><a onclick="toggleProjects()">Return to HomePage</a>
+                </center>
+            </div>
+        </div>
+
+        <div class="taskbar">
+            <div id="startButton">
+                <img src="_images/startIcon.png">
+                <p>
+                    <b>
+                        Home
+                    </b>
+                </p>
+            </div>
+
+            <div id="clock">
+                <img src="_images/axoIcon.png" title="Just an Axolotl">
+                <p id="localTime" title="Current time in my area">
+                    00:00
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
