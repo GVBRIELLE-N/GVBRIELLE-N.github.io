@@ -245,17 +245,17 @@ button:hover{
     width: 80px;
     height: 88%;
     left: 2px;
-    border-bottom: 1px solid #000000;
-    border-right: 1px solid #000000;
-    border-left: 1px solid #ffffff;
-    border-top: 1px solid #ffffff;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
 }
 #startButton:active{
     background-color: #818181;
-    border-bottom: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
-    border-left: 1px solid #000000;
-    border-top: 1px solid #000000;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
 }
 #startButton:hover{
     cursor: pointer;
