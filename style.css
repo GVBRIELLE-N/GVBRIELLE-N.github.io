@@ -40,9 +40,6 @@ button{
 button:hover{
     cursor: pointer;
 }
-/* p{
-    font-weight: bold;
-} */
 
 /* ScrollBar */
 ::-webkit-scrollbar {
@@ -65,9 +62,6 @@ button:hover{
     border-bottom: 1px solid #000000; 
   }
   
-  ::-webkit-scrollbar-thumb:hover {
-    cursor: pointer; 
-  }
 
 /* Classes */
 
@@ -120,6 +114,26 @@ button:hover{
     background-image: url("./images/closeiconactive.png");
     background-size: contain;
     background-repeat: no-repeat;
+}
+.galleryImage{
+    float:left;
+    width: 400px;
+    height: 225px;
+    margin-top: 3px;
+    margin-left: 2px;
+    padding: 2px 2px 2px 2px;
+    background: none;
+
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+
+    filter: sepia(80%);
+}
+.galleryImage:hover{
+    background-color: #041586;
+    filter: sepia(0%);
 }
 .noneType{
     border: none;
@@ -175,6 +189,7 @@ button:hover{
     background-color: #C3C3C3;
     border-top: 2px solid #ffffff;
     bottom: 0px;
+    padding-top: 2px;
 }
 .vihlWindow{
     background-color: #8f79a3;
@@ -206,8 +221,9 @@ button:hover{
     position: absolute;
     text-align: right;
     width: 95px;
-    height: 88%;
+    height: 80%;
     right: 0;
+    margin-right: 3px;
     border-bottom: 1px solid #ffffff;
     border-right: 1px solid #ffffff;
     border-left: 1px solid #818181;
@@ -232,26 +248,17 @@ button:hover{
     width: 94%;
 }
 #galleryMain div{
-    background-color: #C3C3C3;
+    background-color: #e4e4e4;
     height: 480px;
     display: block;
     overflow:scroll;
     overflow-x: hidden;
-    border-bottom: 1px solid #e0e0e0;
-    border-right: 1px solid #e0e0e0;
-    border-left: 1px solid #000000;
-    border-top: 1px solid #000000;
+    border-bottom: 2px solid #e0e0e0;
+    border-right: 2px solid #e0e0e0;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
     margin-left: 5px;
     margin-right: 5px;
-}
-.galleryImage{
-    float:left;
-    width: 400px;
-    height: 225px;
-    margin-top: 3px;
-    margin-left: 3px;
-    margin-right: 5px;
-    margin-bottom: 5px;
 }
 #Id_text{
     text-align: left;
@@ -293,14 +300,14 @@ button:hover{
 }
 #taskbarButton{
     float: left;
-    text-align: right;
+    text-align: center;
     width: 80px;
-    height: 88%;
+    height: 80%;
     left: 2px;
     border-bottom: 2px solid #000000;
     border-right: 2px solid #000000;
     border-left: 2px solid #ffffff;
-    margin-right: 3px;
+    margin-left: 3px;
     border-top: 2px solid #ffffff;
 }
 #taskbarButton:active{
@@ -322,8 +329,7 @@ button:hover{
 
 #taskbarButton a{
     position: relative;
-    bottom: -25%;
-    right: 10%;
+    bottom: -10%;
     font-size: medium;
 }
 
