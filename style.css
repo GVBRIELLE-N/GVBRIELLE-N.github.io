@@ -44,6 +44,31 @@ button:hover{
     font-weight: bold;
 } */
 
+/* ScrollBar */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #C3C3C3;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    cursor: pointer; 
+  }
+
 /* Classes */
 
 .center{
@@ -207,27 +232,26 @@ button:hover{
     width: 1280px;
 }
 #galleryMain div{
+    background-color: #C3C3C3;
     height: 480px;
     display: block;
     overflow:scroll;
     overflow-x: hidden;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .galleryImage{
     float:left;
     width: 400px;
     height: 225px;
-    border-top: 1px solid #e0e0e0;
-    border-left: 1px solid #e0e0e0;
-    border-right: 1px solid #000000;
-    border-bottom: 1px solid #000000;
+    margin-top: 3px;
+    margin-left: 3px;
     margin-right: 5px;
     margin-bottom: 5px;
-}
-.galleryImage:active{
-    border-bottom: 1px solid #e0e0e0;
-    border-right: 1px solid #e0e0e0;
-    border-left: 1px solid #000000;
-    border-top: 1px solid #000000;
 }
 #Id_text{
     text-align: left;
