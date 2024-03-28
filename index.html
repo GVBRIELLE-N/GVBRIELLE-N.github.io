@@ -86,6 +86,29 @@
             </div>
         </div>
 
+        <!-- Poster window -->
+        <div class="gabbyad" id="gabbyad" style="display: none;">
+            <h1>Poster of the week<img onclick="showNews()" src="images/closeicon.png"></h1>
+            <img src="images/gamedevsoon.png" title="A web series? A book? A random video on the web? Who knows">
+        </div>
+
+        <!-- Espee window -->
+        <div class="popup" id="popup" style="display: block;">
+            <div>
+                <center>
+                    <img id="espee" onclick="toggleEspee()" src="images/esp_default.png">
+                    <p class="nopadding">
+                        Hullooo! I'm <b>Espee</b>!
+                        <br>Gabby has a neat little poster to show ya.
+                        <br><font id="popupLink" onclick="showNews(), toggleEspee()">Check it out!</font>
+                        <br>
+                        <br>(Click on my face to close.)
+                    </p>
+                </center>
+            </div>
+        </div>
+
+        <!-- Taskbar -->
         <div class="taskbar">
 
             <div id="taskbarButton">
@@ -100,8 +123,8 @@
                 </a>
             </div>
 
-            <div id="clock">
-                <img src="./images/axoicon.png" title="Just an Axolotl">
+            <div id="clock" onclick="toggleEspee()">
+                <img id="axo" src="./images/axoicon.png" title="Just an Axolotl">
                 <p id="localTime" title="Current time in my area">
                     00:00
                 </p>

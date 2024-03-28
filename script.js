@@ -48,7 +48,28 @@ function toggleProjects(){
         y.style.display = "none";
     }
 }
-
+function toggleEspee(){
+    var esp = document.getElementById("popup");
+    if (esp.style.display === "none"){
+        esp.style.display = "block";
+    }
+    else{
+        esp.style.display = "none";
+    }
+}
+function showNews(){
+    var ad = document.getElementById("gabbyad");
+    var esp = document.getElementById("popup");
+    if (ad.style.display === "none" && esp.style.display === "block"){
+        ad.style.display = "block";
+    }
+    else if (ad.style.display === "block" && esp.style.display === "block"){
+        ad.style.display = "block";
+    }
+    else{
+        ad.style.display = "none";
+    }
+}
 function setTime(){
     var now = new Date();
     now.setMinutes(now.getMinutes() + 120);

@@ -4,6 +4,7 @@ body{
     font-family: mainFont;
     font-size: larger;
     margin: 0px;
+    overflow: hidden;
 }
 a{
     color: #000000;
@@ -115,6 +116,46 @@ button:hover{
     background-size: contain;
     background-repeat: no-repeat;
 }
+.gabbyad{
+    position: absolute;
+    top: 5%;
+    right: 5px;
+    width: 325px;
+    height: 480px;
+    background-color: #C3C3C3;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #424242;
+    border-right: 2px solid #424242;
+}
+.gabbyad h1{
+    color: #ffffff;
+    background-color: #041586;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 0px;
+    padding-left: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 0px;
+}
+.gabbyad h1 img{
+    position: absolute;
+    right: 4px;
+    top: 2px;
+    height: 20px;
+    width: 20px;
+}
+.gabbyad h1 img:hover{
+    cursor: pointer;
+}
+.gabbyad img{
+    height: 455px;
+    width: 315px;
+    padding: 0%;
+    margin: 0%;
+    padding-left: 5px;
+}
 .galleryImage{
     float:left;
     width: 400px;
@@ -144,6 +185,28 @@ button:hover{
     border: none;
     background: none;
     box-shadow: none;
+}
+.nopadding{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.popup{
+    position: absolute;
+    font-size: 12px;
+    right: 5px;
+    bottom: 6%;
+    width: 128px;
+    height: 76px;
+    background-color: #fffecb;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #424242;
+    border-right: 2px solid #424242;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.popup:hover{
+    cursor: default;
 }
 .postLink{
     height: 5%;
@@ -243,6 +306,17 @@ button:hover{
 #clock:hover{
     cursor: default;
 }
+#espee{
+    position: relative;
+    width: 32px;
+    margin: 2px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    opacity: 100%;
+}
+#espee:hover{
+    cursor: pointer;
+    opacity: 90%;
+}
 #galleryMain{
     height: 530px;
     width: 94%;
@@ -288,6 +362,13 @@ button:hover{
     border-right: 1px solid #e0e0e0;
     border-left: 1px solid #000000;
     border-top: 1px solid #000000;
+}
+#popupLink{
+    color: #191889;
+}
+#popupLink:hover{
+    cursor: pointer;
+    text-decoration: solid underline;
 }
 #profile-pic{
     width: 230px;
