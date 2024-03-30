@@ -41,6 +41,9 @@ button{
 button:hover{
     cursor: pointer;
 }
+p:hover, h1:hover{
+    cursor: default;
+}
 
 /* ScrollBar */
 ::-webkit-scrollbar {
@@ -167,9 +170,9 @@ button:hover{
     float:left;
     width: 400px;
     height: 225px;
-    margin-top: 3px;
+    margin-top: 0px;
     margin-left: 2px;
-    padding: 2px 2px 2px 2px;
+    padding: 0px 2px 2px 2px;
     background: none;
 
     border-bottom: 2px solid #ffffff;
@@ -182,6 +185,10 @@ button:hover{
 .galleryImage:hover{
     background-color: #041586;
     filter: sepia(0%);
+}
+.galleryLabel{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 .noneType{
     border: none;
@@ -249,6 +256,12 @@ button:hover{
 .projectImages:hover{
     cursor: pointer;
     filter: saturate(100%);
+}
+.softwareLink{
+    color: #191889;
+}
+.softwareLink:hover{
+    cursor: pointer;
 }
 .taskbar{
     position: absolute;
@@ -386,6 +399,23 @@ button:hover{
     border-right: 2px solid #000000;
     border-bottom: 2px solid #000000;
 }
+#softwareWindow{
+    background-color: #ffffff;
+    margin-top: 0%;
+    padding-top: 0%;
+    width:590px;
+    height: 355px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+#softwareWindow img{
+    height: 48;
+    width: 48px;
+}
 #taskbarButton{
     float: left;
     text-align: center;
@@ -427,10 +457,14 @@ button:hover{
 }
 
 @media (max-width: 1080px) {
-  .taskbar{
+    .galleryLabel{
+        display: none;
+        visibility: hidden;
+    }
+    .taskbar{
     display: none;
-  }
-  .popup{
+    }
+    .popup{
     visibility: hidden;
-  }
+    }
 }
