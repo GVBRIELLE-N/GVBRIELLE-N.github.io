@@ -1,0 +1,42 @@
+body{
+    background-image: url(../images/VihlBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #ffc086;
+    font-family: vihlFont, fantasy;
+}
+
+p{
+    width: 70%;
+}
+
+p:first-letter{
+    color: #991d14;
+    font-size: 40px;
+    font-family: vihlFont, fantasy;
+}
+
+#gameTitle{
+    width: 40%;
+}
+
+#header{
+    width: 99%;
+}
+
+#content{
+    margin-top: 50px;
+    background-color: #0f090498;
+    width: 60%;
+    border: 2px ridge #8b4513;
+}
+
+@font-face{
+    font-family: vihlFont;
+    src: url("../fonts/dum1.ttf");
+}
