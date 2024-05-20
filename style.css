@@ -48,23 +48,23 @@ p:hover, h1:hover{
 /* ScrollBar */
 ::-webkit-scrollbar {
     width: 15px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #e0e0e0;
-    border-bottom: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
-    border-left: 1px solid #000000;
-    border-top: 1px solid #000000;
-  }
-   
-  ::-webkit-scrollbar-thumb {
-    background: #C3C3C3;
-    border-top: 1px solid #ffffff;
-    border-left: 1px solid #ffffff;
-    border-right: 1px solid #000000;
-    border-bottom: 1px solid #000000; 
-  }
+}
+
+::-webkit-scrollbar-track {
+background: #e0e0e0;
+border-bottom: 1px solid #ffffff;
+border-right: 1px solid #ffffff;
+border-left: 1px solid #000000;
+border-top: 1px solid #000000;
+}
+
+::-webkit-scrollbar-thumb {
+background: #C3C3C3;
+border-top: 1px solid #ffffff;
+border-left: 1px solid #ffffff;
+border-right: 1px solid #000000;
+border-bottom: 1px solid #000000; 
+}
   
 
 /* Classes */
@@ -119,6 +119,60 @@ p:hover, h1:hover{
     background-size: contain;
     background-repeat: no-repeat;
 }
+.commisionCategory{
+    width: 240px;
+    height: 100%;
+    background-color: #000000;
+}
+.commisionCategory:hover{
+    background-color: #191889;
+    cursor: pointer;
+    filter: brightness(110%);
+}
+.commisionCategory:active{
+    filter: brightness(130%);
+}
+.commStatus{
+    text-align: center;
+    position: absolute;
+    width: 235px;
+    bottom: 2px;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+}
+.commStatus:hover{
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+}
+.current{
+    background-color: #818181;
+    float: left;
+    text-align: center;
+    width: 80px;
+    height: 80%;
+    left: 2px;
+    margin-left: 3px;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+}
+.current:hover{
+    cursor: default;
+}
+.current a{
+    position: relative;
+    bottom: -10%;
+    font-size: medium;
+}
+.current a:hover{
+    cursor: default;
+}
 .gabbyad{
     margin: auto;
     position: absolute;
@@ -168,7 +222,7 @@ p:hover, h1:hover{
 }
 .galleryImage{
     float:left;
-    width: 400px;
+    width: 380px;
     height: 225px;
     margin-top: 0px;
     margin-left: 2px;
@@ -325,6 +379,23 @@ p:hover, h1:hover{
 }
 #clock:hover{
     cursor: default;
+}
+#commissionWindow{
+    display: flex;
+    margin-left: 2px;
+    margin-right: 2px;
+    height: 90%;
+    background-color: #C3C3C3;
+    border-bottom: 2px solid #e0e0e0;
+    border-right: 2px solid #e0e0e0;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+}
+#commOpen{
+    background-color: green;
+}
+#commClosed{
+    background-color: red;
 }
 #espee{
     position: relative;

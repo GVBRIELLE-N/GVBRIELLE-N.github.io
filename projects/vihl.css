@@ -1,3 +1,23 @@
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+background: #0f0904;
+border-bottom: 1px solid #8b4513;
+border-right: 1px solid #8b4513;
+border-left: 1px solid #000000;
+border-top: 1px solid #000000;
+}
+
+::-webkit-scrollbar-thumb {
+background: #421d0c;
+border-top: 1px solid #8b4513;
+border-left: 1px solid #8b4513;
+border-right: 1px solid #000000;
+border-bottom: 1px solid #000000; 
+}
+
 body{
     background-image: url(../images/VihlBG.png);
     background-repeat: no-repeat;

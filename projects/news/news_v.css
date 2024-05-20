@@ -1,0 +1,100 @@
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+background: #0f0904;
+border-bottom: 1px solid #8b4513;
+border-right: 1px solid #8b4513;
+border-left: 1px solid #000000;
+border-top: 1px solid #000000;
+}
+
+::-webkit-scrollbar-thumb {
+background: #421d0c;
+border-top: 1px solid #8b4513;
+border-left: 1px solid #8b4513;
+border-right: 1px solid #000000;
+border-bottom: 1px solid #000000; 
+}
+
+#newsBanner{
+    background-color: aqua;
+    width: 60%;
+    height: 150px;
+    margin-top: 0px;
+    color: #ffffff;
+    background-size: cover;
+    border: 2px ridge #8b4513;
+    position: sticky;
+    top: 0px;
+}
+
+#newsContent{
+    background-color: #0f090498;
+    width: 60%;
+    border: 2px ridge #8b4513;
+}
+
+#newsFooter{
+    background-color: #3b0b0867;
+    height: 20px;
+    width: 60%;
+    border: 2px ridge #8b4513;
+}
+
+#newsFooter p{
+    padding: 0px;
+    margin: 0px;
+}
+
+#newsContent img{
+    width: 240px;
+    border: 2px ridge #8b4513;
+}
+
+#newsContent p{
+    width: 70%;
+}
+
+.contentText:first-letter{
+    color: #991d14;
+    font-size: 40px;
+    font-family: vihlFont, fantasy;
+}
+
+body{
+    background-position-x: 50%;
+    cursor: default;
+    padding-top: 0px;
+    margin-top: 0px;
+    background-image: url(../../images/VihlBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    font-family: vihlFont, fantasy;
+}
+
+h1{
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    width: 70%;
+    border-bottom: 2px ridge #8b4513;
+    border-top: 2px ridge #8b4513;
+    font-size: 24px;
+    text-decoration: solid underline;
+}
+
+@font-face{
+    font-family: vihlFont;
+    src: url("../../fonts/dum1.ttf");
+}
