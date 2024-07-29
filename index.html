@@ -15,31 +15,31 @@
         <div class="container">
             <div class="center" id="main" style="display: block;">
                 <center>
-                    <h1><img src='./images/webicon.png'>
+                    <h1>
                         Home Page
                     </h1>
-                    <img id="profile-pic" src="./images/homepic.png" draggable="false">
+                    <img id="profile-pic" src="./images/leotheralogo.png" draggable="false">
                     <p style="margin-bottom: 0px;">
-                            Hullooo! I'm <font title="AKA GEE_BEE!!/GVBRIELLE" style="color: #191889; text-decoration: underline;"><b>Leothera!!</b></font>
-                        <br>I make games and stuff!
+                            <font title="Me" style="color: #761694; text-decoration: underline;"><b>Leothera</b></font>'s realm of web.
+                        <br>Where you'll find all the important stuff or somethin'
                     </p>
                     <hr width="90%" size="2">
-                    <a onclick="toggleInfoVisibility()">About Me</a> | <a onclick="toggleLinks()">Links</a> | <a onclick="toggleProjects()">My Projects</a>
+                    <a onclick="toggleInfoVisibility(), calculateAge()">About Me</a>|<a onclick="toggleLinks()">Links</a>|<a onclick="toggleProjects()">My Projects</a>
                 </center>
             </div>
             <div class="center" id="info" style="display: none;">
-                <h1><img src='./images/infoicon.png'>
+                <h1>
                     Staff Card
                 </h1>
 
                     <p id="Id_text">
                             <b>Full Name:</b> Gabby Kayleigh <font title="Last Name withheld :p" style="cursor:help;">N</font>
-                        <br><b>Aliases:</b> Leothera, GVBRIELLE
+                        <br><b>Pseudonyms:</b> Leothera, GVBRIELLE
                         <br><b>Country:</b> South Africa (GMT+2)
                         <br><b>Gender:</b> Non-Binary
                         <br><b>Age:</b> <font id="gabby_age">21</font>
                         <br><u><b>Skills:</b></u>
-                        <br>2D/3D Art | 3D Animation |
+                        <br>2D/3D Art & Animation |
                         <br>Game Dev | Graphic Design | <font title="Languages: C#, C++, Java, JavaScript, Python">Programming</font>
                     </p>
                     
@@ -56,17 +56,14 @@
                 <center>
                     <p>
                                 Below is a list of links to my accounts and such.
-                            <br>Most of them are pretty empty but I'll try to post often and keep everything up to date.
+                            <br>Links to other platforms will be available soon
                     </p>
-                    <hr width="90%" size="2">
-                    <a href="https://gabbyblank.artstation.com/">ArtStation</a>
-                    <a href="https://bsky.app/profile/geebeedev.bsky.social">BlueSky</a>
-                    <a href="https://gvbrielle.itch.io">Itch.io</a>
-                    <a href="https://youtube.com/@GVBRIELLE__?si=0QAzi09UZZ4FJGEY">YouTube</a>
-                    <hr width="90%" size="2">
-                <br> <a href="commissions">Commissions</a> <a onclick="toggleLinks()">Return to HomePage</a>
+                    <img draggable="false" title="ArtStation" src="images/asicon.png" onclick="window.location = 'https://gabbyblank.artstation.com/'">
+                    <img draggable="false" title="BlueSky" src="images/bsicon.png" onclick="window.location = 'https://bsky.app/profile/geebeedev.bsky.social'">
+                    <img draggable="false" title="Itch.io" src="images/iicon.png" onclick="window.location = 'https://gvbrielle.itch.io'">
+                    <img draggable="false" title="YouTube" src="images/yticon.png" onclick="window.location = 'https://youtube.com/@GVBRIELLE__?si=0QAzi09UZZ4FJGEY'">
+            <br><a onclick="toggleLinks()">Return to HomePage</a>
                 </center>
-                <img draggable="false" id="linksAvatar" src="./images/linkspic.png">
             </div>
             <div class="center" id="projects" style="display: none;">
                 <h1>
@@ -77,13 +74,12 @@
                                 Below is a list of my projects.
                             <br>Note: Links for each project will be available soon
                     </p>
-                    <hr width="90%" size="2">
+
                     <div style="height: 200px;">
                         <a href="projects/projected" class="noneType"><img class="projectImages" src="./images/covers/cov_edith.png"></a>
                         <a class="noneType"><img class="projectImages" src="./images/covers/cov_feiran.png"></a>
                         <a href="projects/vihltara" class="noneType"><img class="projectImages" src="./images/covers/cov_vihl.png"></a>
                     </div>
-                    <hr width="90%" size="2">
                 <br><a onclick="toggleProjects()">Return to HomePage</a>
                 </center>
             </div>
@@ -102,8 +98,10 @@
                     <img id="espee" onclick="toggleEspee()" src="images/esp_default.png">
                     <p class="nopadding">
                         Hullooo, visitor!
-                        <br>Leothera's site will be undergoing major layout changes
-                        <br>to compliment a <b>new project</b> that's currently being developed!
+                        <br>Welcome to Leothera's new website!
+                        <br>Inspired by <b>AxolOS!</b>
+                        <br>Note: Some parts of the site might be incomplete,
+                        <br>but they'll be completed soon!
                     </p>
                 </center>
             </div>

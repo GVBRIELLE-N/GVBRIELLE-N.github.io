@@ -1,5 +1,5 @@
 body{
-    background-color: #008080;
+    background-color: #180e17;
     color: #000000;
     font-family: mainFont;
     font-size: larger;
@@ -7,36 +7,30 @@ body{
     overflow: hidden;
 }
 a{
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
+    bottom: 0;
     padding-left: 4px;
     padding-right: 4px;
     text-decoration: none;
-    border-top: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-    border-right: 2px solid #000000;
-    border-bottom: 2px solid #000000;
+    text-transform: uppercase;
 }
 a:hover{
     cursor: pointer;
+    border-bottom: 2px solid #72106d;
 }
 a:active{
-    background-color: #5c5c5c;
-    border-bottom: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
-    border-left: 2px solid #000000;
-    border-top: 2px solid #000000;
+    background-color: #72106d;
 }
 a:visited{
-    color: #000000;
+    color: #ffffff;
 }
 button{
+    background-color: #000000;
+    color: #ffffff;
     padding-left: 4px;
     padding-right: 4px;
     text-decoration: none;
-    border-top: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-    border-right: 2px solid #000000;
-    border-bottom: 2px solid #000000;
 }
 button:hover{
     cursor: pointer;
@@ -48,29 +42,23 @@ p:hover, h1:hover{
 /* ScrollBar */
 ::-webkit-scrollbar {
     width: 15px;
+    padding-left: 0px;
 }
 
 ::-webkit-scrollbar-track {
-background: #e0e0e0;
-border-bottom: 1px solid #ffffff;
-border-right: 1px solid #ffffff;
-border-left: 1px solid #000000;
-border-top: 1px solid #000000;
+    background: #ebebeb;
+    border: #acacac 1px solid;
 }
 
 ::-webkit-scrollbar-thumb {
-background: #C3C3C3;
-border-top: 1px solid #ffffff;
-border-left: 1px solid #ffffff;
-border-right: 1px solid #000000;
-border-bottom: 1px solid #000000; 
+background: #acacac;
 }
   
 
 /* Classes */
 
 .center{
-    background-color: #C3C3C3;
+    background-color: #ebebeb;
     margin: auto;
     width: 600px;
     height: 400px;
@@ -79,20 +67,15 @@ border-bottom: 1px solid #000000;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    border-top: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-    border-bottom: 2px solid #424242;
-    border-right: 2px solid #424242;
+    border: 1px solid #000000;
 }
 .center h1{
     color: #ffffff;
-    background-color: #041586;
+    background-color: #000000;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
+    text-transform: uppercase;
     margin-top: 0px;
-    padding-left: 3px;
-    margin-left: 2px;
-    margin-right: 2px;
 }
 .center h1 img{
     position: relative;
@@ -139,10 +122,6 @@ border-bottom: 1px solid #000000;
     bottom: 2px;
     margin: 0px;
     padding: 0px;
-    border-bottom: 1px solid #000000;
-    border-right: 1px solid #000000;
-    border-left: 1px solid #e0e0e0;
-    border-top: 1px solid #e0e0e0;
 }
 .commStatus:hover{
     cursor: pointer;
@@ -150,22 +129,17 @@ border-bottom: 1px solid #000000;
     padding: 0px;
 }
 .current{
-    background-color: #818181;
+    background-color: #72106d;
     float: left;
     text-align: center;
-    width: 80px;
-    height: 80%;
-    left: 2px;
-    margin-left: 3px;
-    border-bottom: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
-    border-left: 2px solid #000000;
-    border-top: 2px solid #000000;
+    width: 240px;
+    height: 100%;
 }
 .current:hover{
     cursor: default;
 }
 .current a{
+    font-weight: bold;
     position: relative;
     bottom: -10%;
     font-size: medium;
@@ -221,24 +195,22 @@ border-bottom: 1px solid #000000;
     border-top: 1px solid #000000;
 }
 .galleryImage{
-    float:left;
     width: 380px;
     height: 225px;
-    margin-top: 0px;
-    margin-left: 2px;
-    padding: 0px 2px 2px 2px;
+    float: left;
     background: none;
-
-    border-bottom: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
-    border-left: 2px solid #000000;
-    border-top: 2px solid #000000;
-
+    border-bottom: 2px solid #72106d;
     filter: sepia(80%);
+    opacity: 70%;
+    transition: 1s;
+    margin: 0px;
+    padding: 0px;
 }
 .galleryImage:hover{
-    background-color: #041586;
+    background-color: #8f18c7;
     filter: sepia(0%);
+    opacity: 100%;
+    transition: 0.5s;
 }
 .galleryLabel{
     padding: 0px 0px 0px 0px;
@@ -248,6 +220,9 @@ border-bottom: 1px solid #000000;
     border: none;
     background: none;
     box-shadow: none;
+}
+.noneType:hover{
+    border: none;
 }
 .noneType:active{
     border: none;
@@ -261,16 +236,13 @@ border-bottom: 1px solid #000000;
 .popup{
     position: absolute;
     font-size: 12px;
-    right: 5px;
-    bottom: 6%;
+    right: 0px;
+    top: 6%;
     width: 128px;
-    height: 76px;
-    background-color: #fffecb;
-    border-top: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-    border-bottom: 2px solid #424242;
-    border-right: 2px solid #424242;
-    overflow-y: scroll;
+    height: fit-content;
+    background: #ebebeb;
+    color: #000000;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 .popup:hover{
@@ -300,19 +272,17 @@ border-bottom: 1px solid #000000;
 }
 .projectImages{
     height: 200px;
+    background-color: #000000;
     filter: saturate(0%);
-    border-bottom: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
-    border-left: 2px solid #000000;
-    border-top: 2px solid #000000;
-    padding: 3px 3px 0px 3px;
+    border-bottom: 4px solid #72106d;
 }
 .projectImages:hover{
     cursor: pointer;
     filter: saturate(100%);
 }
 .softwareLink{
-    color: #191889;
+    font-weight: bold;
+    color: #72106d;
 }
 .softwareLink:hover{
     cursor: pointer;
@@ -322,11 +292,10 @@ border-bottom: 1px solid #000000;
     display: block;
     font-size: small;
     width: 100%;
-    height: 30px;
-    background-color: #C3C3C3;
-    border-top: 2px solid #ffffff;
-    bottom: 0px;
-    padding-top: 2px;
+    height: 35px;
+    background-color: #000000;
+    border-bottom: 4px solid #72106d;
+    top: 0px;
 }
 .vihlWindow{
     background-color: #8f79a3;
@@ -344,27 +313,20 @@ border-bottom: 1px solid #000000;
 #aboutAvatar{
     height: 55%;
     position: absolute;
-    transform: translate(12%, -130%);
+    transform: translate(12%, -140%);
     margin: 0px;
     padding:0px;
     z-index: 2;
-    background-color: #acacac;
-    border-bottom: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
-    border-left: 2px solid #000000;
-    border-top: 2px solid #000000;
+    background-color: #000000;
+    border-bottom: 4px solid #72106d;
 }
 #clock{
     position: absolute;
     text-align: right;
-    width: 95px;
-    height: 80%;
+    color: #ffffff;
+    width: 130px;
+    height: 100%;
     right: 0;
-    margin-right: 3px;
-    border-bottom: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
-    border-left: 1px solid #818181;
-    border-top: 1px solid #818181;
 }
 #clock p{
     position:relative;
@@ -409,21 +371,17 @@ border-bottom: 1px solid #000000;
     opacity: 90%;
 }
 #galleryMain{
-    height: 530px;
-    width: 94%;
+    height: 230px;
+    width: 1180px;
 }
 #galleryMain div{
     background-color: #e4e4e4;
-    height: 480px;
-    display: block;
-    overflow:scroll;
-    overflow-x: hidden;
-    border-bottom: 2px solid #e0e0e0;
-    border-right: 2px solid #e0e0e0;
-    border-left: 2px solid #000000;
-    border-top: 2px solid #000000;
-    margin-left: 5px;
-    margin-right: 5px;
+    height: 200px;
+    display:flex;
+    overflow-y:hidden;
+    padding-left: 5px;
+    overflow-x: scroll;
+    border-top: 2px solid #9e9e99;
 }
 #Id_text{
     text-align: left;
@@ -434,7 +392,24 @@ border-bottom: 1px solid #000000;
     z-index: 1;
 }
 #links{
-    height: 250px;
+    width: 440px;
+    height: 200px;
+}
+#links img{
+    background: linear-gradient(#000000, #72106d); 
+    transition: 1s;
+    width: 32px;
+    border-radius: 100%;
+    padding: 2px 2px 2px 2px;
+    
+}
+#links img:hover{
+    background: linear-gradient(#72106d, #000000);
+    cursor: pointer;
+    transition: 0.5s;
+}
+#links img:active{
+    background-color: #72106d;
 }
 #linksAvatar{
     height: 68%;
@@ -464,49 +439,34 @@ border-bottom: 1px solid #000000;
 #profile-pic{
     width: 230px;
     border-radius: 100%;
-    background-color: #808080;
-    border-top: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-    border-right: 2px solid #000000;
-    border-bottom: 2px solid #000000;
+    background: linear-gradient(#72106d, #000000);
 }
 #softwareWindow{
-    background-color: #ffffff;
+    background-color: #f1f1f1;
     margin-top: 0px;
     padding-top: 0px;
-    width:590px;
+    width:100%;
     height: 355px;
     overflow-y: scroll;
     overflow-x: hidden;
-    border-top: 1px solid #000000;
-    border-left: 1px solid #000000;
-    border-right: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #9e9e9e;
 }
 #softwareWindow img{
     height: 48;
     width: 48px;
 }
 #taskbarButton{
+    background-color: #000000;
     float: left;
     text-align: center;
-    width: 80px;
-    height: 80%;
-    left: 2px;
-    border-bottom: 2px solid #000000;
-    border-right: 2px solid #000000;
-    border-left: 2px solid #ffffff;
-    margin-left: 3px;
-    border-top: 2px solid #ffffff;
+    width: 100px;
+    height: 100%;
 }
 #taskbarButton:active{
-    background-color: #818181;
-    border-bottom: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
-    border-left: 2px solid #000000;
-    border-top: 2px solid #000000;
+    background-color: #72106d;
 }
 #taskbarButton:hover{
+    background-color: #250824;
     cursor: pointer;
 }
 #taskbarButton img{
@@ -524,7 +484,7 @@ border-bottom: 1px solid #000000;
 
 @font-face {
     font-family: mainFont;
-    src: url("./fonts/consola.ttf");
+    src: url("./fonts/segoeuil.ttf");
 }
 
 @media (max-width: 1080px) {

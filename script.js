@@ -73,7 +73,7 @@ function showNews(){
 function setTime(){
     var now = new Date();
     now.setMinutes(now.getMinutes() + 120);
-    document.getElementById('localTime').innerHTML = "ZA " + now.toISOString().slice(11,16);
+    document.getElementById('localTime').innerHTML = "ZA " + now.toISOString().slice(11,19);
 }
 
 setInterval(setTime, 100)
