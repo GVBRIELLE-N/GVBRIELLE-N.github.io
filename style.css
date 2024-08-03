@@ -271,8 +271,7 @@ background: #acacac;
     background-color: #191889;
 }
 .projectImages{
-    height: 200px;
-    background-color: #000000;
+    height: 80px;
     filter: saturate(0%);
     border-bottom: 4px solid #72106d;
 }
@@ -435,6 +434,14 @@ background: #acacac;
 #popupLink:hover{
     cursor: pointer;
     text-decoration: solid underline;
+}
+#projects{
+    background-color: #19171a;
+    color: #ffffff;
+}
+#projects div{
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 #profile-pic{
     width: 230px;
