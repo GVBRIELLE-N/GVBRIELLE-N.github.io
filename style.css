@@ -216,6 +216,9 @@ background: #acacac;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
 }
+.mobiletext{
+    visibility: hidden;
+}
 .noneType{
     border: none;
     background: none;
@@ -495,6 +498,23 @@ background: #acacac;
 }
 
 @media (max-width: 1080px) {
+    body{
+        font-size: 46px;
+    }
+    .mobiletext{
+        visibility: visible;
+    }
+    .center{
+        width: 90%;
+        height: 90%;
+        align-items: center;
+    }
+    .center h1{
+        font-size: 38px;
+    }
+    .center a{
+        visibility: hidden;
+    }
     .galleryLabel{
         display: none;
         visibility: hidden;
