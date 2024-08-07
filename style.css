@@ -501,16 +501,38 @@ background: #acacac;
     body{
         font-size: 46px;
     }
+    ::-webkit-scrollbar {
+        width: 15px;
+        padding-left: 0px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: none;
+        border: none;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background: #acacac;
+    }
     .mobiletext{
         visibility: visible;
     }
     .center{
+        border: none;
+        overflow-y: scroll;
         width: 90%;
         height: 90%;
         align-items: center;
     }
     .center h1{
+        visibility: hidden;
         font-size: 38px;
+    }
+    .center h2{
+        font-weight: lighter;
+        width: 100%;
+        background-color: #000000;
+        color: #ffffff;
     }
     .center a{
         visibility: hidden;
@@ -519,10 +541,16 @@ background: #acacac;
         display: none;
         visibility: hidden;
     }
+    .profLink{
+        filter: invert(100%);
+    }
     .taskbar{
     display: none;
     }
     .popup{
     visibility: hidden;
+    }
+    #mainLinks{
+        visibility: hidden;
     }
 }
