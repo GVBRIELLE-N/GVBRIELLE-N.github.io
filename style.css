@@ -557,7 +557,7 @@ background: #1d0219;
     .center h2{
         font-weight: lighter;
         width: 100%;
-        background-color: #000000;
+        background: linear-gradient(to right,#0e000c, #000000);
         color: #ffffff;
     }
     .center a{
