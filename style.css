@@ -1,5 +1,5 @@
 body{
-    background-color: #09010e;
+    background-color: #0c070b;
     color: #000000;
     font-family: mainFont;
     font-size: larger;
@@ -81,7 +81,6 @@ background: #1d0219;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    border: 1px solid #000000;
 }
 .center h1{
     color: #ffffff;
