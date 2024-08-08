@@ -520,7 +520,7 @@ background: #acacac;
     .center{
         border: none;
         overflow-y: scroll;
-        width: 90%;
+        width: 100%;
         height: 90%;
         align-items: center;
     }
@@ -543,6 +543,9 @@ background: #acacac;
     }
     .profLink{
         filter: invert(100%);
+    }
+    .projectImages{
+        filter: none;
     }
     .taskbar{
     display: none;
